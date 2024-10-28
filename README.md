@@ -1,9 +1,10 @@
 <p align="center">
-    <img width="300" src="https://alexiacamargo.github.io/stranger-things-landing-page/assets/images/banner/logo.svg">
+    <img width="300" src="https://raw.githubusercontent.com/alexiacamargo/stranger-things-landing-page/main/assets/images/banner/logo.svg" alt="Logo">
 </p>
 
 -------
 A **Landing Page: Mundo Invertido** é uma página interativa que apresenta um universo alternativo inspirado no tema "Mundo Invertido" da série Stranger Things. Com um design vibrante e envolvente, a página utiliza elementos visuais cativantes e uma tipografia impactante para criar uma experiência imersiva para os visitantes. 
+
 Este projeto foi criado como parte do bootcamp da DIO durante o Desafio Semana Front-End.
 
 ## 💻 Tecnologias

@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
 /***  VARIABLES & THEMES ***/
+
 :root {
   --primary-color: #cf0f0f;
   --primary-color-contrast: #ffffff;
@@ -59,10 +60,11 @@
 }
 
 /***  GENERIC STYLES ***/
+
 * {
   margin: 0;
   box-sizing: border-box;
-  transition: background 0.5s, color 0.5s, border 0.5s; 
+  transition: 1s;
 }
 
 body {
@@ -81,9 +83,9 @@ h3 {
 
 p {
   color: var(--highlight-color);
-  font-family: "Libre Baskerville", serif; 
 }
 
+p,
 input,
 textarea,
 label {
@@ -98,7 +100,7 @@ button {
   font-size: 1.25rem;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.5s, color 0.5s; 
+  transition: background 1s;
 }
 
 main {
@@ -106,6 +108,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 main::before {
@@ -124,7 +127,7 @@ textarea {
   border: 2px solid var(--primary-color-contrast);
   background-color: var(--field-background-color);
   color: var(--primary-color-contrast);
-  padding: 10px; 
+  padding: 8px;
 }
 
 input,
@@ -142,13 +145,8 @@ textarea:focus-visible {
   border-color: black;
 }
 
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--primary-color); 
-}
-
 /*** HEADER STYLES ***/
+
 header {
   background-color: var(--header-background-color);
   min-height: 850px;
@@ -197,6 +195,7 @@ header::before {
 }
 
 /*** WORLD CHARACTERS STYLES ***/
+
 .world-characters {
   width: 100%;
   max-width: 900px;
@@ -224,6 +223,7 @@ header::before {
 }
 
 /*** SECTIONS STYLES ***/
+
 section {
   display: flex;
   justify-content: space-between;
@@ -231,10 +231,9 @@ section {
 }
 
 /* Section 01 - Inverted World */
+
 .container {
   max-width: 1200px;
-  margin: 0 auto; 
-  padding: 0 20px; 
 }
 
 #section-inverted-world {
@@ -250,6 +249,7 @@ section {
 }
 
 /* Section 02 - Stranger Things Trailer */
+
 #section-stranger-things-trailer .section-texts {
   width: 50%;
   text-align: right;
@@ -277,6 +277,7 @@ section {
 }
 
 /* Section 03 - Stranger Things Gallery */
+
 #section-stranger-things-gallery {
   width: 100%;
   background: var(--background-lamp-image) 120% / 50% no-repeat;
@@ -313,6 +314,7 @@ section {
 }
 
 /* Section 04 - Dungeons & Dragons Form */
+
 #section-form {
   flex-direction: column;
   align-items: center;
@@ -384,6 +386,7 @@ section {
 }
 
 /*** FOOTER STYLES ***/
+
 footer {
   padding: 60px 0;
   background-color: var(--footer-background-color);
@@ -419,20 +422,4 @@ footer::before {
 footer::after {
   right: -50px;
   transform: rotateZ(10deg);
-}
-
-/*** RESPONSIVE STYLES ***/
-@media (max-width: 768px) {
-  h1, h2, h3 {
-    font-size: 2rem; 
-  }
-
-  .header-content {
-    padding: 40px 10px; 
-  }
-
-  .gallery-image {
-    width: 100%; 
-    max-width: 250px; 
-  }
 }
